@@ -34,25 +34,23 @@ export const Advantages: FC = () => {
       <div className="container">
         {itemsData.map(({ img: { alt, src }, h3, p }) => {
           const img = { alt, src };
-          return <AdvantageItem img={img} h3={h3} p={p} />;
+          return <AdvantageItem img={img} h3={h3} p={p} key={p} />;
         })}
       </div>
     </AdvantagesStyled>
   );
 };
 
-const AdvantageItemStyled = styled.div(({ theme }) => {
-  return css`
-    width: 90%;
-    max-width: 340px;
-    text-align: center;
-    color: white;
+const AdvantageItemStyled = styled.div`
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  color: white;
 
-    img {
-      margin-bottom: 20px;
-    }
-  `;
-});
+  img {
+    margin-bottom: 20px;
+  }
+`;
 
 type AdvantageItemProps = {
   img: { src: string; alt: string };

@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { Advantages } from "./components/Advantages";
 import { ProductiveSection } from "./components/ProductiveSection";
 import { FeedbackSection } from "./components/FeedbackSection";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Advantages />
         <ProductiveSection />
         <FeedbackSection />
+        <Footer />
       </ThemeProvider>
     </>
   );

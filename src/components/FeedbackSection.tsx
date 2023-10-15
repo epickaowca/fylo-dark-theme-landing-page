@@ -42,6 +42,7 @@ export const FeedbackSection: FC = () => {
                 opinion={opinion}
                 person={person}
                 withQuotes={withQuotes}
+                key={name}
               />
             );
           }
