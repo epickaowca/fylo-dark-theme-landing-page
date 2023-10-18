@@ -8,7 +8,7 @@ import quotes from "../assets/bg-quotes.png";
 const Feedback = styled.div(({ theme }) => {
   return css`
     background-color: ${theme.darkBlue.mainBackground};
-    padding: 60px 0 80px 0;
+    padding: 60px 0 350px 0;
 
     .container {
       margin: auto;
@@ -19,7 +19,7 @@ const Feedback = styled.div(({ theme }) => {
     }
 
     @media screen and (min-width: 768px) {
-      padding: 170px 0 170px 0;
+      padding: 170px 0 350px 0;
       .container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -124,7 +124,7 @@ type FeedbackItemProps = {
   withQuotes?: boolean;
 };
 
-const FeedbackItem: FC<FeedbackItemProps> = ({
+export const FeedbackItem: FC<FeedbackItemProps> = ({
   opinion,
   person: { name, title },
   imgSrc,

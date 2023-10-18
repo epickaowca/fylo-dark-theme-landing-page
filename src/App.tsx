@@ -17,6 +17,7 @@ function App() {
         <Advantages />
         <ProductiveSection />
         <FeedbackSection />
+
         <Footer />
       </ThemeProvider>
     </>

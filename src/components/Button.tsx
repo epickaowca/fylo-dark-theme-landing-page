@@ -20,6 +20,6 @@ const ButtonStyled = styled.button(({ theme }) => {
   `;
 });
 
-export const Button: FC<{ children: ReactNode }> = ({ children }) => {
+export const Button: FC<{ children?: ReactNode }> = ({ children }) => {
   return <ButtonStyled>{children}</ButtonStyled>;
 };

@@ -6,13 +6,15 @@ import phoneIcon from "../assets/icon-phone.svg";
 import emailIcon from "../assets/icon-email.svg";
 import facebookIcon from "../assets/facebook-svgrepo-com.svg";
 import twitterIcon from "../assets/twitter-svgrepo-com.svg";
+import { EarlyAccess } from "./EarlyAccess";
 
 const FooterStyled = styled.footer(({ theme }) => {
   return css`
-    padding-top: 50px;
+    position: relative;
+    padding-top: 220px;
     padding-bottom: 50px;
     background-color: ${theme.darkBlue.footerBackground};
-    .container {
+    > .container {
       max-width: 400px;
       font-size: 0.9rem;
       line-height: 1.2rem;
@@ -144,6 +146,7 @@ const FooterStyled = styled.footer(({ theme }) => {
 export const Footer: FC = () => {
   return (
     <FooterStyled>
+      <EarlyAccess />
       <div className="container">
         <div className="left-side">
           <div className="logoContainer">

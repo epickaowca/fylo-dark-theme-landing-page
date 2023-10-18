@@ -58,7 +58,7 @@ type AdvantageItemProps = {
   p: string;
 };
 
-const AdvantageItem: FC<AdvantageItemProps> = ({
+export const AdvantageItem: FC<AdvantageItemProps> = ({
   img: { src, alt },
   h3,
   p,
